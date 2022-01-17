@@ -94,7 +94,7 @@
       border-radius: 50%;
       background-color: #bddde6; }
     .slider-button .dots .active {
-      background-color: black; }
+      background-color: #458ff6; }
   .slider-button .right-arrow {
     transform: rotate(180deg);
     cursor: pointer; }

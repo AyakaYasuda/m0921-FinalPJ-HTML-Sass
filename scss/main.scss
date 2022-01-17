@@ -8,6 +8,28 @@ $cBlue: #458ff6;
 $cLightBlue: #67c3f3;
 $cWhite: white;
 
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+@mixin pc{
+  @media(max-width: ($desktop)){
+    @content;
+  }
+}
+
+@mixin tb{
+  @media(max-width: ($tablet)){
+    @content;
+  }
+}
+
+@mixin mb{
+  @media(max-width: ($mobile)){
+    @content;
+  }
+}
+
 *{
   font-family: $nomalFont;
 }
@@ -28,7 +50,8 @@ $cWhite: white;
   overflow: hidden;
 
   & .slider-header{
-    margin: 3.5rem;
+      margin: 3.5rem;
+    
 
     & .title{
     text-align: center;
@@ -116,7 +139,7 @@ $cWhite: white;
     }
 
     & .active{
-      background-color: black;
+      background-color: $cBlue;
     }
   }
 
@@ -126,8 +149,3 @@ $cWhite: white;
     cursor: pointer;
   }
 }
-
-
-
-
-
