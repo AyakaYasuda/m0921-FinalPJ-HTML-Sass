@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap");
+
+$nomalFont: "Mulish", sans-serif;
+
+.Description {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  .desc {
+    display: flex;
+    justify-content: space-around;
+    font-family: $nomalFont;
+    margin: 3% 0 0 0;
+    padding: 0;
+    img {
+      width: 40%;
+    }
+    h3 {
+      font-size: 2em;
+    }
+    hr{
+      border: 1px solid black;
+      width: 20%;
+      margin-left: 0%;
+    }
+    p {
+      max-width: fit-content;
+    }
+    button {
+      border-radius: 30px;
+      border: 1px solid rgb(37, 123, 223);
+      padding: 3% 8%;
+      background-color: white;
+      color: rgb(37, 123, 223);
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: rgb(37, 123, 223);
+        color: white;
+      }
+    }
+    .detailFirst {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
