@@ -1,4 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
 
 $nomalFont: 'Mulish', sans-serif;
+$cBlue: #458ff6;
+$cLightBlue: #67c3f3;
+$cWhite: white;
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+@mixin pc{
+  @media(max-width: ($desktop)){
+    @content;
+  }
+}
+
+@mixin tb{
+  @media(max-width: ($tablet)){
+    @content;
+  }
+}
+
+@mixin mb{
+  @media(max-width: ($mobile)){
+    @content;
+  }
+}
+
+*{
+  font-family: $nomalFont;
+  background-color: $cWhite;
+}
 
