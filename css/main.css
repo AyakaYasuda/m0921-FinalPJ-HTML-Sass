@@ -50,7 +50,13 @@
     margin: 3.5rem; }
     .slider-wrap .slider-header .title {
       text-align: center;
-      font-size: 2rem; }
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        .slider-wrap .slider-header .title {
+          font-size: 1.5rem; } }
+      @media (min-width: 1024px) {
+        .slider-wrap .slider-header .title {
+          font-size: 2rem; } }
     .slider-wrap .slider-header .divided-line {
       width: 8%;
       height: 2px;
