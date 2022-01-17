@@ -10,19 +10,19 @@ $tablet: 768px;
 $mobile: 425px;
 
 @mixin pc{
-  @media(max-width: ($desktop)){
+  @media(min-width: ($desktop)){
     @content;
   }
 }
 
 @mixin tb{
-  @media(max-width: ($tablet)){
+  @media(min-width: ($tablet)){
     @content;
   }
 }
 
 @mixin mb{
-  @media(max-width: ($mobile)){
+  @media(min-width: ($mobile)){
     @content;
   }
 }
