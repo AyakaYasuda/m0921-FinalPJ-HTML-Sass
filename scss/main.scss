@@ -1,6 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap");
 
 $nomalFont: "Mulish", sans-serif;
+$cBlue: #458ff6;
+$cLightBlue: #67c3f3;
+$cWhite: $cWhite;
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+@mixin pc {
+  @media (max-width: ($desktop)) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media (max-width: ($tablet)) {
+    @content;
+  }
+}
+
+@mixin mb {
+  @media (max-width: ($mobile)) {
+    @content;
+  }
+}
+
+* {
+  font-family: $nomalFont;
+  background-color: $c$cWhite;
+}
 
 .Description {
   display: block;
@@ -19,7 +48,7 @@ $nomalFont: "Mulish", sans-serif;
     h3 {
       font-size: 2em;
     }
-    hr{
+    hr {
       border: 1px solid black;
       width: 20%;
       margin-left: 0%;
@@ -29,16 +58,16 @@ $nomalFont: "Mulish", sans-serif;
     }
     button {
       border-radius: 30px;
-      border: 1px solid rgb(37, 123, 223);
+      border: 1px solid $cBlue;
       padding: 3% 8%;
-      background-color: white;
-      color: rgb(37, 123, 223);
+      background-color: $cWhite;
+      color: $cBlue;
       font-size: 1em;
       cursor: pointer;
       transition: 0.2s ease-in-out;
       &:hover {
-        background-color: rgb(37, 123, 223);
-        color: white;
+        background-color: $cBlue;
+        color: $cWhite;
       }
     }
     .detailFirst {
