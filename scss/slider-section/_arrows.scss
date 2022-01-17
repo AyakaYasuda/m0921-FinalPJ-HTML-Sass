@@ -1,0 +1,20 @@
+$cBlue: #458ff6;
+
+.arrow{
+  position: relative;
+  height: 2px;
+  width: 1.5rem;
+  background-color: $cBlue;
+  
+  &::after{
+    content: '';
+    position: absolute;
+    bottom: -2.5px;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    border-bottom: 2px solid $cBlue;
+    border-right: 2px solid $cBlue;
+    transform: rotate(135deg);
+  }
+}
