@@ -42,7 +42,10 @@ $mobile: 425px;
 
 .slider-wrap{
   background-image: linear-gradient(to bottom, $cLightBlue, $cBlue);
-  width: 70%;
+  width: 90%;
+  @include pc{
+    width: 70%;
+  }
   height: 25rem;
   margin: 0 auto;
   border-radius: 1.5rem;
@@ -50,8 +53,15 @@ $mobile: 425px;
   overflow: hidden;
 
   & .slider-header{
+    margin: 2rem;
+
+    @include tb{
+      margin: 2rem;
+    }
+
+    @include pc{
       margin: 3.5rem;
-    
+    }
 
     & .title{
     text-align: center;
@@ -84,20 +94,52 @@ $mobile: 425px;
 
 .slider-contents{
   @extend .flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include pc{
+    flex-direction: row;
+    gap: 0;
+  }
   width: 100%;
   transition: all 1s ease;
 
   & .profile{
+    @extend .flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include pc{
+      flex-direction: row;
       flex: 1;
-      @extend .flex;
       gap: 20px;
+    }
+      
 
     &-photo{
       @extend .icon-wrapper;
+
+      @include tb{
+        width: 100px;
+        height: 100px;
+      }
+
+      @include pc{
+        width: 150px;
+        height: 150px;
+      }
       
 
       & img{
         @extend .icon;
+
+        @include tb{
+          width: 100px;
+        }
+
+        @include pc{
+          width: 150px
+        }
       }
     }
 
@@ -105,10 +147,27 @@ $mobile: 425px;
       @extend .flex;
       gap: 5px;
       flex-direction: column;
+      align-items: center;
+
+      @include pc{
+        align-items: flex-start;
+      }
 
       & .name{
         font-weight: bold;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+
+        @include tb{
+          font-size: 1.2rem;
+        }
+      }
+
+      & .company{
+        font-size: 0.5rem;
+
+        @include tb{
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -117,10 +176,22 @@ $mobile: 425px;
     flex: 1;
     @extend .flex;
     flex-direction: column;
+    align-items: center;
+
+    @include pc{
+      flex-direction: row;
+    }
     
     & p{
-      width: 75%;
-      line-height: 1.5rem;
+      width: 70%;
+      margin: 0 auto;
+      font-size: 0.8rem;
+
+      @include pc{
+        width: 75%;
+        line-height: 1.5rem;
+        font-size: 1rem;
+      }
     }
   }
 }
