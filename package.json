@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass -o css scss/main.scss -w"
+    "watch": "node-sass -o css scss/main.scss -w",
+    "sass": "sass scss:css -w"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/AyakaYasuda/m0921-FinalPJ-HTML-Sass#readme",
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "sass": "^1.48.0"
   }
 }
