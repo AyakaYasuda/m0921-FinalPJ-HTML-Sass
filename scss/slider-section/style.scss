@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
+
 @import "./slider-icon";
 @import "./flexLayout";
 @import "./arrows";
@@ -28,10 +28,6 @@ $mobile: 425px;
   @media(min-width: ($mobile)){
     @content;
   }
-}
-
-*{
-  font-family: $nomalFont;
 }
 
 .slider-section{
