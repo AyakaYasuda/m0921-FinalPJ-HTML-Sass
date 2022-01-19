@@ -1,4 +1,4 @@
-$nomalFont: 'Mulish', sans-serif;
+$nomalFont: "Mulish", sans-serif;
 $cBlue: #458ff6;
 $cLightBlue: #67c3f3;
 $cWhite: white;
@@ -6,21 +6,121 @@ $cWhite: white;
 $desktop: 1024px;
 $tablet: 768px;
 $mobile: 425px;
-
-@mixin pc{
-  @media(min-width: ($desktop)){
+@mixin pc {
+  @media (max-width: ($desktop)) {
     @content;
   }
 }
 
-@mixin tb{
-  @media(min-width: ($tablet)){
+@mixin tb {
+  @media (max-width: ($tablet)) {
     @content;
   }
 }
 
-@mixin mb{
-  @media(min-width: ($mobile)){
+@mixin mb {
+  @media (max-width: ($mobile)) {
     @content;
+  }
+}
+
+* {
+  font-family: $nomalFont;
+  background-color: $cWhite;
+}
+
+.Description {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  .desc {
+    display: flex;
+    justify-content: space-around;
+    font-family: $nomalFont;
+    margin: 3% 0 0 0;
+    padding: 0;
+    @include tb {
+      display: block;
+    }
+    img {
+      width: 40%;
+      margin: 0;
+      padding: 1%;
+      @include tb {
+        width: 100%;
+        margin: 5% 0 0 0;
+        padding: 0;
+      }
+    }
+    h3 {
+      font-size: 2em;
+      @include tb {
+        text-align: center;
+        margin-top: 3%;
+      }
+    }
+    hr {
+      border: 1px solid black;
+      width: 20%;
+      margin-left: 0%;
+      @include tb {
+        width: 100%;
+        margin: 0 0 0 2%;
+        padding: 0;
+      }
+    }
+    p {
+      max-width: fit-content;
+      @include tb {
+        text-align: center;
+      }
+    }
+    button {
+      border-radius: 30px;
+      border: 1px solid $cBlue;
+      padding: 3% 8%;
+      background-color: $cWhite;
+      color: $cBlue;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+      &:hover {
+        background-color: $cBlue;
+        color: $cWhite;
+      }
+      @include tb {
+        margin: 3% 0% 5% 27%;
+        padding: 4% 12%;
+        font-size: 1.3em;
+      }
+      @include mb {
+        margin: 3% 0% 5% 23%;
+        padding: 4% 12%;
+        font-size: 1.1em;
+      }
+    }
+  }
+  .detailFirst {
+    margin: 5% 11% 0 0;
+    padding-left: 3%;
+  }
+  .descSecond {
+    @include tb {
+      display: flex;
+      flex-direction: column;
+    }
+    .detailSecond {
+      margin: 5% 0% 0 3%;
+      padding-right: 3%;
+      @include tb {
+        order: 1;
+      }
+      img {
+        @include tb {
+          order: 2;
+        }
+      }
+    }
   }
 }
