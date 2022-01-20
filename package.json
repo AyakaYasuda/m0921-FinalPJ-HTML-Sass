@@ -1,15 +1,23 @@
 {
-  "name": "scss",
+  "name": "m0921-finalpj-html-sass",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass scss:css -w"
+    "watch": "node-sass -o css scss/main.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyakaYasuda/m0921-FinalPJ-HTML-Sass.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyakaYasuda/m0921-FinalPJ-HTML-Sass/issues"
+  },
+  "homepage": "https://github.com/AyakaYasuda/m0921-FinalPJ-HTML-Sass#readme",
   "dependencies": {
-    "sass": "^1.48.0"
+    "node-sass": "^7.0.1"
   }
 }
