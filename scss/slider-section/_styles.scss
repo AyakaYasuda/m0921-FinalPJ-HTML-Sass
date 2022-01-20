@@ -38,37 +38,37 @@ $mobile: 425px;
 
 .slider-wrap{
   background-image: linear-gradient(to bottom, $cLightBlue, $cBlue);
-  width: 90%;
+  width: 95%;
   @include pc{
     width: 70%;
   }
-  height: 25rem;
+  height: 40rem;
   margin: 0 auto;
   border-radius: 1.5rem;
   color: $cWhite;
   overflow: hidden;
 
   & .slider-header{
-    margin: 2rem;
+    margin: 3rem;
 
     @include tb{
-      margin: 2rem;
+      margin: 4rem;
     }
 
     @include pc{
-      margin: 3.5rem;
+      margin: 5rem;
     }
 
     & .title{
     text-align: center;
-    font-size: 1rem;
+    font-size: 2rem;
 
     @include tb{
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     @include pc{
-      font-size: 2rem;
+      font-size: 3rem;
     }
     
   }
@@ -77,7 +77,7 @@ $mobile: 425px;
     width: 8%;
     height: 2px;
     background-color: $cWhite;
-    margin: 0 auto;
+    margin: 2rem auto;
     }
   }
   
@@ -154,7 +154,7 @@ $mobile: 425px;
         font-size: 0.8rem;
 
         @include tb{
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
       }
 
@@ -162,7 +162,7 @@ $mobile: 425px;
         font-size: 0.5rem;
 
         @include tb{
-          font-size: 1rem;
+          font-size: 1.3rem;
         }
       }
     }
@@ -181,12 +181,12 @@ $mobile: 425px;
     & p{
       width: 70%;
       margin: 0 auto;
-      font-size: 0.8rem;
+      font-size: 1.3rem;
 
       @include pc{
         width: 75%;
-        line-height: 1.5rem;
-        font-size: 1rem;
+        line-height: 2rem;
+        font-size: 1.5rem;
       }
     }
   }
