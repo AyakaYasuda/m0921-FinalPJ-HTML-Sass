@@ -1,0 +1,78 @@
+$nomalFont: 'Mulish', sans-serif;
+$cBlue: #458ff6;
+$cLightBlue: #67c3f3;
+$cWhite: white;
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+@mixin pc{
+  @media(min-width: ($desktop)){
+    @content;
+  }
+}
+
+@mixin tb{
+  @media(min-width: ($tablet)){
+    @content;
+  }
+}
+
+@mixin mb{
+  @media(min-width: ($mobile)){
+    @content;
+  }
+}
+
+.site-footer{
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:white;
+  min-height: 432px;
+  .row{
+    margin-top: 48px;
+  }
+  .footer-1{
+    min-width: 391px;
+    #logo-white{
+      margin: 12px 0;
+    }
+  }
+ 
+  h5{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    color: #FFFFFF;
+  }
+  img{
+    max-width: 160px;
+    max-height: 41px;
+    margin-bottom: 12px;
+  }
+  p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+
+    mix-blend-mode: normal;
+    width: 100%;
+  }
+  li{
+    list-style: none;
+    a{
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 38px;
+      color: #FFFFFF;
+    }
+  }
+}
