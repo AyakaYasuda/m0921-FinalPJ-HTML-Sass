@@ -159,4 +159,154 @@
     cursor: pointer; }
 
 * {
-  font-family: "Mulish", sans-serif; }
+  font-family: "Mulish", sans-serif;
+  background-color: white;
+}
+
+.Description {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Description .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Mulish", sans-serif;
+  margin: 3% 0 0 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .Description .desc {
+    display: block;
+  }
+}
+
+.Description .desc img {
+  width: 40%;
+  margin: 0;
+  padding: 1%;
+}
+
+@media (max-width: 768px) {
+  .Description .desc img {
+    width: 100%;
+    margin: 5% 0 0 0;
+    padding: 0;
+  }
+}
+
+.Description .desc h3 {
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  .Description .desc h3 {
+    text-align: center;
+    margin-top: 3%;
+  }
+}
+
+.Description .desc hr {
+  border: 1px solid black;
+  width: 20%;
+  margin-left: 0%;
+}
+
+@media (max-width: 768px) {
+  .Description .desc hr {
+    width: 100%;
+    margin: 0 0 0 2%;
+    padding: 0;
+  }
+}
+
+.Description .desc p {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .Description .desc p {
+    text-align: center;
+  }
+}
+
+.Description .desc button {
+  border-radius: 30px;
+  border: 1px solid #458ff6;
+  padding: 3% 8%;
+  background-color: white;
+  color: #458ff6;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.Description .desc button:hover {
+  background-color: #458ff6;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .Description .desc button {
+    margin: 3% 0% 5% 27%;
+    padding: 4% 12%;
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 425px) {
+  .Description .desc button {
+    margin: 3% 0% 5% 23%;
+    padding: 4% 12%;
+    font-size: 1.1em;
+  }
+}
+
+.Description .detailFirst {
+  margin: 5% 11% 0 0;
+  padding-left: 3%;
+}
+
+@media (max-width: 768px) {
+  .Description .descSecond {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Description .descSecond .detailSecond {
+  margin: 5% 0% 0 3%;
+  padding-right: 3%;
+}
+
+@media (max-width: 768px) {
+  .Description .descSecond .detailSecond {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .Description .descSecond .detailSecond img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+/*# sourceMappingURL=main.css.map */
