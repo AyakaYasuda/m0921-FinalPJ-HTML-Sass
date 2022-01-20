@@ -1,4 +1,163 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap");
+.icon-wrapper, .slider-contents .profile-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.icon, .slider-contents .profile-photo img {
+  width: 70px; }
+
+.flex, .slider-contents, .slider-contents .profile, .slider-contents .profile-details, .slider-contents .comments, .slider-button, .slider-button .dots {
+  display: flex;
+  justify-content: center; }
+
+.arrow, .slider-button .left-arrow, .slider-button .right-arrow {
+  position: relative;
+  height: 2px;
+  width: 1.5rem;
+  background-color: #458ff6; }
+  .arrow::after, .slider-button .left-arrow::after, .slider-button .right-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -2.5px;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    border-bottom: 2px solid #458ff6;
+    border-right: 2px solid #458ff6;
+    transform: rotate(135deg); }
+
+.slider-section {
+  height: 100%;
+  padding: 10px; }
+
+.slider-wrap {
+  background-image: linear-gradient(to bottom, #67c3f3, #458ff6);
+  width: 90%;
+  height: 25rem;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  color: white;
+  overflow: hidden; }
+  @media (min-width: 1024px) {
+    .slider-wrap {
+      width: 70%; } }
+  .slider-wrap .slider-header {
+    margin: 2rem; }
+    @media (min-width: 768px) {
+      .slider-wrap .slider-header {
+        margin: 2rem; } }
+    @media (min-width: 1024px) {
+      .slider-wrap .slider-header {
+        margin: 3.5rem; } }
+    .slider-wrap .slider-header .title {
+      text-align: center;
+      font-size: 1rem; }
+      @media (min-width: 768px) {
+        .slider-wrap .slider-header .title {
+          font-size: 1.5rem; } }
+      @media (min-width: 1024px) {
+        .slider-wrap .slider-header .title {
+          font-size: 2rem; } }
+    .slider-wrap .slider-header .divided-line {
+      width: 8%;
+      height: 2px;
+      background-color: white;
+      margin: 0 auto; }
+
+.slider {
+  display: grid;
+  grid-template-columns: 100% 100% 100% 100%; }
+
+.slider-contents {
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  transition: all 1s ease; }
+  @media (min-width: 1024px) {
+    .slider-contents {
+      flex-direction: row;
+      gap: 0; } }
+  .slider-contents .profile {
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1024px) {
+      .slider-contents .profile {
+        flex-direction: row;
+        flex: 1;
+        gap: 20px; } }
+    @media (min-width: 768px) {
+      .slider-contents .profile-photo {
+        width: 100px;
+        height: 100px; } }
+    @media (min-width: 1024px) {
+      .slider-contents .profile-photo {
+        width: 150px;
+        height: 150px; } }
+    @media (min-width: 768px) {
+      .slider-contents .profile-photo img {
+        width: 100px; } }
+    @media (min-width: 1024px) {
+      .slider-contents .profile-photo img {
+        width: 150px; } }
+    .slider-contents .profile-details {
+      gap: 5px;
+      flex-direction: column;
+      align-items: center; }
+      @media (min-width: 1024px) {
+        .slider-contents .profile-details {
+          align-items: flex-start; } }
+      .slider-contents .profile-details .name {
+        font-weight: bold;
+        font-size: 0.8rem; }
+        @media (min-width: 768px) {
+          .slider-contents .profile-details .name {
+            font-size: 1.2rem; } }
+      .slider-contents .profile-details .company {
+        font-size: 0.5rem; }
+        @media (min-width: 768px) {
+          .slider-contents .profile-details .company {
+            font-size: 1rem; } }
+  .slider-contents .comments {
+    flex: 1;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1024px) {
+      .slider-contents .comments {
+        flex-direction: row; } }
+    .slider-contents .comments p {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 0.8rem; }
+      @media (min-width: 1024px) {
+        .slider-contents .comments p {
+          width: 75%;
+          line-height: 1.5rem;
+          font-size: 1rem; } }
+
+.slider-button {
+  margin: 30px;
+  gap: 50px;
+  align-items: center; }
+  .slider-button .left-arrow {
+    cursor: pointer; }
+  .slider-button .dots {
+    gap: 10px; }
+    .slider-button .dots .dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: #bddde6; }
+    .slider-button .dots .active {
+      background-color: #458ff6; }
+  .slider-button .right-arrow {
+    transform: rotate(180deg);
+    cursor: pointer; }
+
 * {
   font-family: "Mulish", sans-serif;
   background-color: white;
@@ -151,4 +310,3 @@
   }
 }
 /*# sourceMappingURL=main.css.map */
-
