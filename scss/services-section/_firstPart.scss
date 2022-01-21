@@ -29,40 +29,31 @@ $mobile: 425px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
 
-  .services-wrap{
-      width: 95%;
-      margin: 0 auto;
+    &-title{
+      margin: 2rem 0;
       
-      @include pc{
-        width: 75%;
+      & h3{
+        font-family: $nomalFont;
+        font-size: 2.5rem;
+        color: #000000;
+        text-align: center;
+  
+        @include tb{
+          font-size: 3rem;
+        }
+  
+        @include pc{
+          font-size: 3.5rem;
+        }
       }
-  }
-
-  .header{
-    margin: 2rem 0;
-
-    & h3{
-      font-family: $nomalFont;
-      font-size: 2.5rem;
-      color: #000000;
-      text-align: center;
-
-      @include tb{
-        font-size: 3rem;
+  
+      & .border{
+        width: 5%;
+        height: 2px;
+        background-color: black;
+        margin: 2rem auto;
       }
-
-      @include pc{
-        font-size: 3.5rem;
-      }
-    }
-
-    & .border{
-      width: 5%;
-      height: 2px;
-      background-color: black;
-      margin: 2rem auto;
     }
 
     &-sub{
@@ -74,4 +65,13 @@ $mobile: 425px;
         font-size: 1.6rem;
       }
     }
+  }
+
+  .services-wrap{
+      width: 95%;
+      margin: 0 auto;
+      
+      @include pc{
+        width: 75%;
+      }
   }
