@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap");
-
-* {
-  font-family: "Mulish", sans-serif; }
-
 .navbar {
   width: 100%;
   max-width: 1330px;
@@ -212,6 +208,8 @@
         font-size: 1.6rem;
         padding: 1.3rem 6rem; } }
 
+* {
+  font-family: "Mulish", sans-serif; }
 
 .Description {
   display: block;
@@ -225,7 +223,6 @@
     margin: 3% 0 0 0;
     padding: 0;
     text-align: center; }
-
     @media (min-width: 768px) {
       .Description .desc {
         display: block; } }
@@ -286,7 +283,6 @@
       background-color: transparent;
       transition: all 0.3s ease;
       margin: 2rem 0; }
-     
       .Description .desc button:hover {
         background-color: #458ff6;
         color: white; }
@@ -297,7 +293,6 @@
         .Description .desc button {
           font-size: 1.6rem;
           padding: 1.3rem 6rem; } }
-
   .Description .detailFirst {
     margin: 5% 11% 0 0;
     padding-left: 3%; }
@@ -502,6 +497,7 @@ html {
 
 .btn {
   color: #458ff6;
+  font-size: "Mulish", sans-serif;
   padding: 1rem 2rem;
   font-style: bold;
   font-size: 1.3rem;
@@ -528,7 +524,8 @@ html {
 
 .articles {
   text-align: center;
-  margin: 10rem auto; }
+  margin: 10rem auto;
+  position: relative; }
 
 .articles--title .title {
   margin-top: 3rem;
@@ -587,8 +584,7 @@ html {
       overflow: hidden;
       z-index: -10;
       left: 50%;
-      top: 20%; } }
-
+      top: 200%; } }
   @media (min-width: 1024px) {
     .backimage {
       left: 70%;
@@ -633,7 +629,6 @@ html {
     .btn {
       font-size: 1.6rem;
       padding: 1.3rem 6rem; } }
-
 
 .readmore {
   font-size: 1.7rem;
