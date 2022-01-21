@@ -49,13 +49,30 @@ html {
 }
 
 .btn {
-  font-size: 1.8rem;
-  font-weight: 700;
   color: $cBlue;
-  border: $cBlue 1px solid;
-  border-radius: 20px;
-  padding: 1rem 5rem;
-  background-color: #ffffff;
+  font-size: $nomalFont;
+  padding: 1rem 2rem;
+  font-style: bold;
+  font-size: 1.3rem;
+  border: 1px solid #458FF6;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+
+  &:hover{
+    background-color: $cBlue;
+    color: $cWhite;
+  }
+
+  @include tb{
+    padding: 1rem 4rem;
+  }
+
+  @include pc{
+    font-size: 1.6rem;
+    padding: 1.3rem 6rem;
+  }
 }
 
 .readmore {

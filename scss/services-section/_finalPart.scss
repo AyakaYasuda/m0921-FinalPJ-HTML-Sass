@@ -1,11 +1,37 @@
-button{
+.last{
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+
+    @include pc{
+        margin: 10rem 0;
+    }
+
+    & button{
     color: $cBlue;
     font-size: $nomalFont;
-    width:237.53px;
-    height:57.93px;
+    padding: 1rem 2rem;
     font-style: bold;
-    font-size:18px;
-    border: 1.4px solid #458FF6;
+    font-size: 1.3rem;
+    border: 1px solid #458FF6;
     box-sizing: border-box;
-    border-radius: 55px;
+    border-radius: 5rem;
+    background-color: transparent;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: $cBlue;
+        color: $cWhite;
+    }
+
+    @include tb{
+        padding: 1rem 4rem;
+    }
+
+    @include pc{
+        font-size: 1.6rem;
+        padding: 1.3rem 6rem;
+    }
+    }
 }
+

@@ -2,7 +2,6 @@ $nomalFont: 'Mulish', sans-serif;
 $cBlue: #458ff6;
 $cLightBlue: #67c3f3;
 $cWhite: white;
-
 $desktop: 1024px;
 $tablet: 768px;
 $mobile: 425px;
@@ -25,41 +24,54 @@ $mobile: 425px;
     }
   }
 
-  h3{
-    font-family: $nomalFont;
-    font-style: Bold;
-    font-size: 36px;
-    Line-height: 56px;
-    Line-height: 124%;
-    Align: Left;
-    Vertical-align: Top;
-    color: #000000;
+  .services{
+    background-image: url(../../public/assets/services-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  hr{
-    position: absolute;
-    width: 70.35px;
-    height: 1.93px;
-    left: 802.08px;
-    top: 916.18px;
-    background: #000000;
-    border-radius: 5px;
+  .services-wrap{
+      width: 95%;
+      margin: 0 auto;
+      
+      @include pc{
+        width: 75%;
+      }
   }
 
-  p{
-    position: absolute;
-    left: 14.88%;
-    right: 10.38%;
-    top: 15.98%;
-    bottom: 82.83%;
-    font-family: $nomalFont;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
+  .header{
+    margin: 2rem 0;
 
-    text-align: center;
-    color: #7D7987;
-    mix-blend-mode: normal;
+    & h3{
+      font-family: $nomalFont;
+      font-size: 2.5rem;
+      color: #000000;
+      text-align: center;
 
+      @include tb{
+        font-size: 3rem;
+      }
+
+      @include pc{
+        font-size: 3.5rem;
+      }
+    }
+
+    & .border{
+      width: 5%;
+      height: 2px;
+      background-color: black;
+      margin: 2rem auto;
+    }
+
+    &-sub{
+      font-size: 1rem;
+      text-align: center;
+      color: #7D7987;
+
+      @include tb{
+        font-size: 1.6rem;
+      }
+    }
   }
