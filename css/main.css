@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap");
+
+* {
+  font-family: "Mulish", sans-serif; }
+
 .navbar {
   width: 100%;
   max-width: 1330px;
@@ -99,8 +103,115 @@
           margin: 0;
           padding: 1%; } }
 
-* {
-  font-family: "Mulish", sans-serif; }
+.services {
+  background-image: url(../../public/assets/services-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.services-wrap {
+  width: 95%;
+  margin: 0 auto; }
+  @media (min-width: 1024px) {
+    .services-wrap {
+      width: 75%; } }
+
+.header {
+  margin: 2rem 0; }
+  .header h3 {
+    font-family: "Mulish", sans-serif;
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .header h3 {
+        font-size: 3rem; } }
+    @media (min-width: 1024px) {
+      .header h3 {
+        font-size: 3.5rem; } }
+  .header .border {
+    width: 5%;
+    height: 2px;
+    background-color: black;
+    margin: 2rem auto; }
+  .header-sub {
+    font-size: 1rem;
+    text-align: center;
+    color: #7D7987; }
+    @media (min-width: 768px) {
+      .header-sub {
+        font-size: 1.6rem; } }
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0; }
+  @media (min-width: 768px) {
+    .middle {
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 4rem;
+      margin: 10rem 0; } }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 29rem;
+  height: 20rem;
+  border-radius: 1.3rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: white; }
+  .container-details {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    align-items: center;
+    padding: 2rem; }
+  .container-img {
+    width: 50px;
+    margin: 0 auto; }
+    .container-img img {
+      width: 50px; }
+  .container-title {
+    font-size: 2rem;
+    text-align: center; }
+  .container-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray; }
+
+.last {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0; }
+  @media (min-width: 1024px) {
+    .last {
+      margin: 10rem 0; } }
+  .last button {
+    color: #458ff6;
+    font-size: "Mulish", sans-serif;
+    padding: 1rem 2rem;
+    font-style: bold;
+    font-size: 1.3rem;
+    border: 1px solid #458FF6;
+    box-sizing: border-box;
+    border-radius: 5rem;
+    background-color: transparent;
+    transition: all 0.3s ease; }
+    .last button:hover {
+      background-color: #458ff6;
+      color: white; }
+    @media (min-width: 768px) {
+      .last button {
+        padding: 1rem 4rem; } }
+    @media (min-width: 1024px) {
+      .last button {
+        font-size: 1.6rem;
+        padding: 1.3rem 6rem; } }
+
 
 .Description {
   display: block;
@@ -112,12 +223,15 @@
     justify-content: space-around;
     font-family: "Mulish", sans-serif;
     margin: 3% 0 0 0;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
+
     @media (min-width: 768px) {
       .Description .desc {
         display: block; } }
     @media (min-width: 1024px) {
       .Description .desc {
+        text-align: start;
         display: flex; } }
     .Description .desc img {
       width: 100%;
@@ -161,28 +275,29 @@
           text-align: left;
           max-width: fit-content; } }
     .Description .desc button {
-      border-radius: 30px;
-      border: 1px solid #458ff6;
-      background-color: white;
       color: #458ff6;
-      margin: 3% 0% 20% 22%;
-      padding: 4% 12%;
-      font-size: 2.3em;
-      cursor: pointer;
-      transition: 0.2s ease-in-out; }
+      font-size: "Mulish", sans-serif;
+      padding: 1rem 2rem;
+      font-style: bold;
+      font-size: 1.3rem;
+      border: 1px solid #458FF6;
+      box-sizing: border-box;
+      border-radius: 5rem;
+      background-color: transparent;
+      transition: all 0.3s ease;
+      margin: 2rem 0; }
+     
       .Description .desc button:hover {
         background-color: #458ff6;
         color: white; }
       @media (min-width: 768px) {
         .Description .desc button {
-          margin: 4% 0% 5% 27%;
-          padding: 4% 12%;
-          font-size: 1.3em; } }
+          padding: 1rem 4rem; } }
       @media (min-width: 1024px) {
         .Description .desc button {
-          margin: 10%, 0%, 0, 0%;
-          padding: 2% 4%;
-          font-size: 2em; } }
+          font-size: 1.6rem;
+          padding: 1.3rem 6rem; } }
+
   .Description .detailFirst {
     margin: 5% 11% 0 0;
     padding-left: 3%; }
@@ -386,13 +501,25 @@ html {
   letter-spacing: 1px; }
 
 .btn {
-  font-size: 1.8rem;
-  font-weight: 700;
   color: #458ff6;
-  border: #458ff6 1px solid;
-  border-radius: 20px;
-  padding: 1rem 5rem;
-  background-color: #ffffff; }
+  padding: 1rem 2rem;
+  font-style: bold;
+  font-size: 1.3rem;
+  border: 1px solid #458FF6;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  background-color: transparent;
+  transition: all 0.3s ease; }
+  .btn:hover {
+    background-color: #458ff6;
+    color: white; }
+  @media (min-width: 768px) {
+    .btn {
+      padding: 1rem 4rem; } }
+  @media (min-width: 1024px) {
+    .btn {
+      font-size: 1.6rem;
+      padding: 1.3rem 6rem; } }
 
 .readmore {
   font-size: 1.7rem;
@@ -460,7 +587,8 @@ html {
       overflow: hidden;
       z-index: -10;
       left: 50%;
-      top: 200%; } }
+      top: 20%; } }
+
   @media (min-width: 1024px) {
     .backimage {
       left: 70%;
@@ -485,13 +613,27 @@ html {
   letter-spacing: 1px; }
 
 .btn {
-  font-size: 1.8rem;
-  font-weight: 700;
   color: #458ff6;
-  border: #458ff6 1px solid;
-  border-radius: 20px;
-  padding: 1rem 5rem;
-  background-color: #ffffff; }
+  font-size: "Mulish", sans-serif;
+  padding: 1rem 2rem;
+  font-style: bold;
+  font-size: 1.3rem;
+  border: 1px solid #458FF6;
+  box-sizing: border-box;
+  border-radius: 5rem;
+  background-color: transparent;
+  transition: all 0.3s ease; }
+  .btn:hover {
+    background-color: #458ff6;
+    color: white; }
+  @media (min-width: 768px) {
+    .btn {
+      padding: 1rem 4rem; } }
+  @media (min-width: 1024px) {
+    .btn {
+      font-size: 1.6rem;
+      padding: 1.3rem 6rem; } }
+
 
 .readmore {
   font-size: 1.7rem;
