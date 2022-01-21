@@ -6,10 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
+  
   <body>
     <main>
-
+      <section class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="navbar-toggler ">
+            <img class="navbar-mobile-logo" src="/public/assets/logo.png" alt="logo-mobile3">
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><img src="public/assets/logo.png" alt="logo-original"></a>
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0"></div>
+            <div class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Find a doctor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Apps</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="header">
+        <img class="header-background-image" src="/public/assets/element.png" alt="">
+        <div class="main-content left-side-content">
+          <h2>Virtual healthcare 
+            for you</h2>
+          <p>Trafalgar provides progressive, and affordable 
+            healthcare, accessible on mobile and online 
+            for everyone</p>
+          <button>Consult today</button>
+        </div>
+        <div class="main-content right-side-content">
+          <img src="/public/assets/hero-bg.png" alt="">
+        </div>
+      </section>
     
       <section class="services">
         <div class="services-wrap">
@@ -93,7 +141,6 @@
 
       </section>
       
-          
       <section class="Description">
         <div class="desc descFirst">
           <img src="./public/assets/description-bg1.png" alt="image1" />
@@ -272,9 +319,71 @@ or administrative hassle) and securely”</p>
         />
         <button class="btn">View all</button>
       </section>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-1 col-sm-12 col-md-4">
+              <img src="/public/assets/logo-white.png" id="logo-white" alt="logo-footer">
+              <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online 
+                for everyone</p>
 
+              <p>©Trafalgar PTY LTD 2020. All rights reserved</p>
+            </div>
+            <div class="footer-2 col-xs-4 col-md-2">
+              <h5>Company</h5>
+              <ul>
+                <li>
+                  <a href="">About</a>
+                </li>
+                <li>
+                  <a href="">Testimonials</a>
+                </li>
+                <li>
+                  <a href="">Find a doctor</a>
+                </li>
+                <li>
+                  <a href="">Apps</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-3 col-xs-4 col-md-2">
+              <h5>Region</h5>
+              <ul>
+                <li>
+                  <a href="">Indonesia</a>
+                </li>
+                <li>
+                  <a href="">Singapore</a>
+                </li>
+                <li>
+                  <a href="">Hongkong</a>
+                </li>
+                <li>
+                  <a href="">Canada</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-4 col-xs-4 col-md-2">
+              <h5>Help</h5>
+              <ul>
+                <li>
+                  <a href="">Help Center</a>
+                </li>
+                <li>
+                  <a href="">Contact support</a>
+                </li>
+                <li>
+                  <a href="">Instructions</a>
+                </li>
+                <li>
+                  <a href="">How it works</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./src/main.js"></script>
-
   </body>
 </html>
