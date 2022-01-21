@@ -1,0 +1,151 @@
+$nomalFont: 'Mulish', sans-serif;
+$cBlue: #458ff6;
+$cLightBlue: #67c3f3;
+$cWhite: white;
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 425px;
+
+@mixin pc{
+  @media(min-width: ($desktop)){
+    @content;
+  }
+}
+
+@mixin tb{
+  @media(min-width: ($tablet)){
+    @content;
+  }
+}
+
+@mixin mb{
+  @media(min-width: ($mobile)){
+    @content;
+  }
+}
+
+.navbar{
+  width: 100%;
+  max-width: 1330px;
+  margin: auto;
+  margin-top: 24px;
+  .navbar-toggler:first-child{
+    border: none !important;
+  }
+  .navbar-mobile-logo{
+    max-width: 160px;
+    max-height: 41px;
+  }
+  .navbar-brand{
+    img{
+      max-width: 160px;
+      max-height: 41px;
+    }
+  }
+  li{ 
+    margin-left: 32px;
+    a{
+      font-size: 18px;
+    }
+  }
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 48px !important;
+  @media screen and (max-width: 1023px){
+    margin-top: 48px;
+    flex-direction: column;
+  }
+  .main-content{
+    display: block;
+    justify-content: space-around;
+    font-family: $nomalFont;
+    margin: 3% 0 0 0;
+    padding: 0;
+    img {
+      width: 100%;
+      margin: 5% 0 0 0;
+      padding: 0;
+      @include pc {
+        width: 40%;
+        margin: 0;
+        padding: 1%;
+      }
+    }
+  }
+  .header-background-image{
+    position: absolute;
+    left: -50px;
+    top: 200px;
+    width: 132px;
+    height: 115px;
+  }
+  .left-side-content{
+    margin-right: 106px;
+    max-width: 445px;
+    @media screen and (max-width: 1023px){
+      min-width: 100%;
+      padding: 0 32px;
+      margin: 0 auto;
+
+    }
+    h2{
+      font-size: 48px;
+
+    }
+    p{
+      margin-top: 12px;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 32px;
+      color: #7D7987;
+      mix-blend-mode: normal;
+    }
+    button{
+      margin-top: 32px;
+      width: 200px;
+      height: 60px;
+      background: #458FF6;
+      border-radius: 55px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 60px;
+      border: none;
+      color: #FFFFFF;
+      mix-blend-mode: normal;
+
+      &:hover{
+        background-color: $cWhite;
+        color: $cBlue;
+        border: 1px solid $cBlue;
+      }
+    }
+  }
+  .right-side-content{
+    max-width: 693px;
+    max-height: 598px;
+    
+    img{
+      @include pc {
+        width: 100%;
+        margin: 0;
+        padding: 1%;
+      }
+      @include tb {
+        width: 100%;
+        margin: 0;
+        padding: 1%;
+      }
+      max-width: 693px;
+      max-height: 598px;
+    }
+  }
+}
