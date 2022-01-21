@@ -526,9 +526,11 @@ html {
   color: #458ff6; }
 
 .articles {
+  width: 100%;
   text-align: center;
   margin: 10rem auto;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .articles--title .title {
   margin-top: 3rem;
@@ -587,11 +589,11 @@ html {
       overflow: hidden;
       z-index: -10;
       left: 50%;
-      top: 200%; } }
+      top: 10%; } }
   @media (min-width: 1024px) {
     .backimage {
       left: 70%;
-      top: 20%; } }
+      top: 10%; } }
 
 *,
 *::after,

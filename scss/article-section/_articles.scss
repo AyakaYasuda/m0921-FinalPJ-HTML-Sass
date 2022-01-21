@@ -1,9 +1,11 @@
 @import './base-for-articles';
 
 .articles {
+  width: 100%;
   text-align: center;
   margin: 10rem auto;
   position: relative; //to make it absolute image correct position
+  overflow: hidden;
 }
 
 .articles--title {
@@ -79,11 +81,11 @@
     overflow: hidden;
     z-index: -10;
     left: 50%;
-    top: 200%; // Adjust after the whole page styling is done
+    top: 10%; // Adjust after the whole page styling is done
   }
 
   @include pc {
     left: 70%;
-    top: 20%; // Adjust after the whole page styling is done
+    top: 10%; // Adjust after the whole page styling is done
   }
 }
