@@ -121,6 +121,12 @@ $mobile: 425px;
       border: none;
       color: #FFFFFF;
       mix-blend-mode: normal;
+
+      &:hover{
+        background-color: $cWhite;
+        color: $cBlue;
+        border: 1px solid $cBlue;
+      }
     }
   }
   .right-side-content{
